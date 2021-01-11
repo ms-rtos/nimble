@@ -77,7 +77,7 @@ ble_npl_eventq_remove(struct ble_npl_eventq *evq,
                       struct ble_npl_event *ev)
 {
     struct ble_npl_event *tmp;
-    struct ble_npl_event *first;
+    struct ble_npl_event *first = MS_NULL;
     ms_err_t err;
 
     if (!ev->queued) {
